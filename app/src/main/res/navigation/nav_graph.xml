@@ -9,17 +9,60 @@
         android:id="@+id/splashScreenFragment"
         android:name="com.example.todoapp.fragments.SplashScreenFragment"
         android:label="fragment_splash_screen"
-        tools:layout="@layout/fragment_splash_screen" />
+        tools:layout="@layout/fragment_splash_screen">
+
+        <action
+            android:id="@+id/splash_to_signIn"
+            app:destination="@+id/signInFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/splash_to_home"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+    </fragment>
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.todoapp.fragments.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@+id/sign_in_to_signUp"
+            app:destination="@+id/signUpFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/sign_in_to_home"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.todoapp.fragments.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/signUp_to_signIn"
+            app:destination="@+id/signInFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/sign_up_to_home"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.todoapp.fragments.HomeFragment"

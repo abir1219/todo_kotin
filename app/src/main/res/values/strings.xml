@@ -11,6 +11,8 @@
         Don\'t have account? <font color="#4287f5"><b>SignUp</b></font>.
     </string>
     <string name="goto_signIn">
-        Already have account? <font color="#4287f5"><b>Signin</b></font>.
+        Already have account? <font color="#4287f5"><b>SignIn</b></font>.
     </string>
+    <string name="login_title">Login</string>
+    <string name="registration_title">Registration</string>
 </resources>
